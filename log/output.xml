@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.9.13 on win32)" generated="20230125 16:37:14.792" rpa="false" schemaversion="3">
+<suite id="s1" name="01 Add Employee Test" source="D:\orange_automation\2_employee_suite\01_add_employee_test.robot">
+<test id="s1-t1" name="Add Valid Employee Test_${test_name}" line="12">
+<kw name="Launch Browser And Navigate To Url" library="common_functionality" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230125 16:37:16.245" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20230125 16:37:16.245" endtime="20230125 16:37:26.308"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230125 16:37:26.309" endtime="20230125 16:37:26.523"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>20s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20230125 16:37:26.524" endtime="20230125 16:37:26.529"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230125 16:37:26.532" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/'</msg>
+<status status="PASS" starttime="20230125 16:37:26.529" endtime="20230125 16:37:34.312"/>
+</kw>
+<status status="PASS" starttime="20230125 16:37:16.245" endtime="20230125 16:37:34.312"/>
+</kw>
+<kw name="Add Valid Employee Template">
+<arg>kim</arg>
+<arg>kim123</arg>
+<arg>${firstname}</arg>
+<arg>${lastname}</arg>
+<arg>${middlename}</arg>
+<arg>${expected_fullname}</arg>
+<arg>${expected_firstname}</arg>
+<msg timestamp="20230125 16:37:34.312" level="FAIL">Variable '${firstname}' not found.</msg>
+<status status="FAIL" starttime="20230125 16:37:34.312" endtime="20230125 16:37:34.312"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230125 16:37:34.312" endtime="20230125 16:37:36.585"/>
+</kw>
+<status status="FAIL" starttime="20230125 16:37:16.245" endtime="20230125 16:37:36.587">Variable '${firstname}' not found.</status>
+</test>
+<test id="s1-t2" name="Add Valid Employee Test_${test_name}" line="12">
+<kw name="Launch Browser And Navigate To Url" library="common_functionality" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230125 16:37:36.591" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20230125 16:37:36.591" endtime="20230125 16:37:38.502"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230125 16:37:38.503" endtime="20230125 16:37:38.635"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>20s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20230125 16:37:38.635" endtime="20230125 16:37:38.645"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230125 16:37:38.647" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/'</msg>
+<status status="PASS" starttime="20230125 16:37:38.645" endtime="20230125 16:37:49.361"/>
+</kw>
+<status status="PASS" starttime="20230125 16:37:36.591" endtime="20230125 16:37:49.361"/>
+</kw>
+<kw name="Add Valid Employee Template">
+<arg>saul</arg>
+<arg>saul123</arg>
+<arg>${firstname}</arg>
+<arg>${lastname}</arg>
+<arg>${middlename}</arg>
+<arg>${expected_fullname}</arg>
+<arg>${expected_firstname}</arg>
+<msg timestamp="20230125 16:37:49.361" level="FAIL">Variable '${firstname}' not found.</msg>
+<status status="FAIL" starttime="20230125 16:37:49.361" endtime="20230125 16:37:49.361"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230125 16:37:49.361" endtime="20230125 16:37:51.610"/>
+</kw>
+<status status="FAIL" starttime="20230125 16:37:36.591" endtime="20230125 16:37:51.610">Variable '${firstname}' not found.</status>
+</test>
+<doc>records</doc>
+<status status="FAIL" starttime="20230125 16:37:14.808" endtime="20230125 16:37:51.610"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="01 Add Employee Test">01 Add Employee Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230125 16:37:36.588" level="WARN">Multiple tests with name 'Add Valid Employee Test_${test_name}' executed in suite '01 Add Employee Test'.</msg>
+</errors>
+</robot>
